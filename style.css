@@ -1,0 +1,70 @@
+.wrap {width: 1400px; height: 1750px; display: flex; flex-direction: column; margin-left:220px}
+header {width: 1400px; height: 250px; color: #21409a; font-weight: bold;
+        display: flex; justify-content:column; margin-top:30px; margin-bottom:30px}
+header img {width:180px; height:200px; display:block; margin-top:10px; margin-left:600px; margin-right:100px }        
+header ul { margin-left:150px; margin-right:10px; display:flex; justify-content:space-between}        
+header ul li {list-style: none; float:left; }
+header ul li span {background-color:white; width:100px; height:30px; text-align:center; padding-top:5px}
+header ul li span:hover {cursor:pointer; background-color:#ffde17;}
+
+
+main {width: 1400px; height: 1400px;}
+p {color: #848ba1}
+
+
+section ul{ width:1200px; height: 70px; display:flex; justify-content:space-around; margin-left:100px ;margin-right:auto}
+section ul li {list-style: none; float: left;}
+section ul li:hover {cursor:pointer; color:#ffde17; font-size:20;}
+
+.section1 {width: 1400px; height: 500px;}
+/*==============slider================*/
+.slick-slider button {position: absolute; top: 32%; outline: "none"; border: none;
+            width: 40px; height: 40px; border-radius: 35px; background-color:#bacaf7; color: white;
+            z-index: 99; padding-bottom:5px; padding-left:3px}
+.slick-slider .slick-prev {left: -30px; font-size: 0;}
+.slick-slider .slick-prev::before {content: '<'; line-height: 1; font-size: 25px;}
+.slick-slider .slick-next { right: -30px; font-size: 0; }
+.slick-slider .slick-next::after { content: '>'; line-height: 1; font-size: 25px; }
+.slick-dots{display: none;}
+.slick-dots li{display: none}
+.slick-dots button{display: none;}
+.slick-slider img{ width: 500; height: 400px;}
+.slick-slide {padding:40px 0; position: relative; height:auto !important; opacity: 0.5; 
+            transition: all 900ms ease;}
+.slick-current {opacity: 1; transform: scale(1.2); z-index: 99; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;} 
+.slick-slide .xyz{opacity: 0;}
+.slick-current .xyz{opacity: 1;}
+
+.section2 {width: 1400px; height: 350px;  margin-top:50px; justify-content: space-between;
+           display: flex; flex-direction: row; }
+.section2-1 {width: 500px; height: 350px; margin-left:150px} 
+.section2-2 {width: 500px; height: 350px; margin-right:150px}        
+.section2_h2 {width: 500px; height: 25px; text-align: center; clear: both;  padding-bottom:60px; color: #21409a;}
+.section2_img {width: 250px; height: 260px; float: left}
+.section2_p {width: 240px; height: 260px; float: right; margin-left:10px}
+span {width: 80px; height: 30px; background-color: #fff8ce; float: right; border-radius: 20px;
+      font-size:15px; text-align: center; align-items:flex-end; justify-content:flex-end;
+      margin-right:10px}
+
+.section3 {width: 1400px; height: 300px; margin-top: 60px;  justify-content: space-between;
+          display: flex; flex-direction: row; }      
+.section3-1 {width: 340px; height: 300px; padding-left:20px; padding-top:10px; margin-left:150px; 
+             border: #21409a 1px solid; border-radius: 10px}
+.section3-2 {width: 340px; height: 300px;  padding-left:20px; padding-top:10px;
+             border: #21409a 1px solid; border-radius: 10px}   
+.section3-3 {width: 340px; height: 300px; padding-left:20px; padding-top:10px; margin-right:150px; 
+             border: #21409a 1px solid; border-radius: 10px}    
+.section3_s {width:80px; height:30px; background-color:white; font-size:10px ; margin-top:10px}
+.section3_h3 {color: #21409a; margin-bottom: 30px}             
+
+footer {width:1400; height:200px; background-color:#21409a; 
+        display:flex; flex-direction:row}               
+.footer_logo {width:520px; height:200px ; align-items:center}
+.footer_logo_img {width: 150px; height: 150px; margin-top:20px; margin-left:300px}
+.footer_text {width:550px; height:200px; text-align:center; margin-left:125px}
+.footer_sns {width:300px; height:200px; margin-left:60px; display:flex; justify-content:center;}
+.footer_sns_img {width:40px; height:40px; margin-top:80px; margin-left:10px}
+
+
+
+

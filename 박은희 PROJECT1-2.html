@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DAEGU</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+   
+
+    <STYLE>
+.wrap {width: 1400px; height: 1750px; display: flex; flex-direction: column; margin-left:150px}
+header {width: 1400px; height: 250px; color: #21409a; font-weight: bold;
+        display: flex; justify-content:column; margin-top:30px; margin-bottom:30px}
+header img {width:180px; height:200px; display:block; margin-top:10px; margin-left:600px; margin-right:100px }        
+header ul {display:table; margin-left:0px; margin-right:10px; display:flex; justify-content:space-between}        
+header ul li {list-style: none; float:left; }
+header ul li span {background-color:white; width:100px; height:30px; text-align:center; padding-top:5px}
+header ul li span:hover {cursor:pointer; background-color:#ffde17;}
+
+
+main {width: 1400px; height: 1400px;}
+p {color: #848ba1}
+h2, h3 {color: #21409a; margin-bottom: 30px}
+
+
+section ul{ width:1200px; height: 70px; display:flex; justify-content:space-around; margin-left:50px ;margin-right:auto}
+section ul li {list-style: none; float: left;}
+section ul li:hover {cursor:pointer; color:#ffde17; font-size:20;}
+
+.section1 {width: 1400px; height: 500px;}
+/*==============slider================*/
+.slick-slider button {position: absolute; top: 32%; outline: "none"; border: none;
+            width: 40px; height: 40px; border-radius: 35px; background-color:#bacaf7; color: white;
+            z-index: 99; padding-bottom:5px; padding-left:3px}
+.slick-slider .slick-prev {left: -30px; font-size: 0;}
+.slick-slider .slick-prev::before {content: '<'; line-height: 1; font-size: 25px;}
+.slick-slider .slick-next { right: -30px; font-size: 0; }
+.slick-slider .slick-next::after { content: '>'; line-height: 1; font-size: 25px; }
+.slick-dots{display: none;}
+.slick-dots li{display: none}
+.slick-dots button{display: none;}
+.slick-slider img{ width: 500; height: 400px;}
+.slick-slide {padding:40px 0; position: relative; height:auto !important; opacity: 0.5; 
+            transition: all 900ms ease;}
+.slick-current {opacity: 1; transform: scale(1.2); z-index: 99; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;} 
+.slick-slide .xyz{opacity: 0;}
+.slick-current .xyz{opacity: 1;}
+
+.section2 {width: 1400px; height: 350px;  margin-top:50px; justify-content: space-between;
+           display: flex; flex-direction: row; }
+.section2-1 {width: 500px; height: 350px; margin-left:150px} 
+.section2-2 {width: 500px; height: 350px; margin-right:150px}        
+.section2_h2 {width: 500px; height: 25px; text-align: center; clear: both;  padding-bottom:20px;}
+.section2_img {width: 250px; height: 260px; float: left}
+.section2_p {width: 240px; height: 260px; float: right; margin-left:10px}
+span {width: 80px; height: 30px; background-color: #fff8ce; float: right; border-radius: 20px;
+      font-size:15px; text-align: center; align-items:flex-end; justify-content:flex-end;
+      margin-right:10px}
+
+.section3 {width: 1400px; height: 300px; margin-top: 60px;  justify-content: space-between;
+          display: flex; flex-direction: row; }      
+.section3-1 {width: 340px; height: 300px; padding-left:20px; padding-top:10px; margin-left:150px; 
+             border: #21409a 1px solid; border-radius: 10px}
+.section3-2 {width: 340px; height: 300px;  padding-left:20px; padding-top:10px;
+             border: #21409a 1px solid; border-radius: 10px}   
+.section3-3 {width: 340px; height: 300px; padding-left:20px; padding-top:10px; margin-right:150px; 
+             border: #21409a 1px solid; border-radius: 10px}    
+.section3_s {width:80px; height:30px; background-color:white; font-size:10px ; margin-top:10px}             
+
+footer {width:1000; height:200px; background-color:#21409a; 
+        display:flex; flex-direction:row}               
+.footer_logo {width:450px; height:200px ; align-items:center}
+.footer_logo_img {width: 150px; height: 150px; margin-top:30px; margin-left:220px}
+.footer_text {width:550px; height:200px; text-align:center; margin-left:125px}
+.footer_sns {width:400px; height:200px; margin-left:20px; display:flex; justify-content:center;}
+.footer_sns_img {width:40px; height:40px; margin-top:80px; margin-left:10px}
+
+
+
+
+
+
+    </STYLE>
+</head>
+
+<body>
+<div class="wrap">  
+
+<header>
+    <img src="img/LOGO.png" >
+    <ul>
+        <li><span>로그인</span></li><font style="font-size:20px">l</font>&nbsp; 
+        <li><span>회원가입</span></li><font style="font-size:20px">l</font>&nbsp;       
+        <li><span>Languge</span></li>
+    </ul>     
+     
+    </header>
+<!-----main start--------------------------------------------->
+    <main>
+        <section>
+            <ul style="color:#21409a; font-size:20px; font-weight:bold">
+                <li>with Toddler</li>
+                <li>with Kids</li>
+                <li>with Teenager</li>
+                <li>with Family</li>
+           </ul>
+        </section>
+
+        <section class="section1">
+            <div class="slider">
+                <div class="mx-3">
+                  <div class="card border-0 rounded-0"
+                    style="background-image:url('img/a1.jpg'); background-size: cover;">
+                    <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="width: 500px;height: 400px">
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-3">
+                  <div class="card border-0 rounded-0"
+                    style="background-image:url('img/a2.jpg') ;background-size: cover;">
+                    <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="width: 500px; height: 400px">
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-3">
+                  <div class="card border-0 rounded-0"
+                    style="background-image:url('img/a3.jpg') ;background-size:  cover;">
+                    <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="width: 500px; height: 400px">
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-3">
+                  <div class="card border-0 rounded-0"
+                    style="background-image:url('img/a4.jpg');background-size: cover;">
+                    <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="width: 500px; height: 400px">
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-3">
+                  <div class="card border-0 rounded-0"
+                    style="background-image:url('img/a5.jpg') ;background-size:  cover;">
+                    <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="width: 500px; height: 400px">
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-3">
+                  <div class="card border-0 rounded-0"
+                    style="background-image:url('img/a6.jpg');background-size:  cover;">
+                    <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="width: 500px; height: 400px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="section2">
+            <div class="section2-1">
+                <h2 class="section2_h2">Best place 대구 어린이회관</h2>
+                <img src="img/best place.jpg" class="section2_img">
+                <p style="font-size:15px" class="section2_p">항상 어린이들이 마음껏 뛰어놀 수 있는 도심속의 쾌적한 휴식 공간 제공.
+                직접 체험하고 연구하는 어린이 과학 탐구 학습장으로서의 교육기능을 제공하고 있습니다.
+                <br><br>&star;&nbsp;주소: 대구 수성구 동대구로 176/ 황금동 626<br><br>
+                &star;&nbsp;주차장 여부: O<br><br>
+                <span>more +</span>
+                </p>
+            </div>
+            <div class="section2-2">
+               <h2 class="section2_h2">Best Food 일조 샤브샤브</h2>
+                <img src="img/best food2.jpg" class="section2_img">
+                <p style="font-size:15px" class="section2_p">건강한 재료로 만드는 샤브샤브. 싱싱한 소고기와 새우완자, 아이들이 좋아하는 볶음밥, 
+                모두가 즐길...
+                <br><br>&star;&nbsp;주소: 대구시 수성구 노변로109/노변동 12-1<br><br>
+                &star;&nbsp;유아 의자 여부: O<br><br>
+                &star;&nbsp;주차장 여부: O<br>
+                <span>more +</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="section3-1">
+                <h3>Information <span class="section3_s">● ● ●</span></h3>
+                <p>대구 수목원목재문화체험장<br>
+                8월 이용 인터넷 접수<br>
+                대구 미술관 단체관람<br>
+                대구 어린이세상 개관기념<br>
+                대구시민안전테마파트 체험 접수
+                </p>
+            </div>
+            <div class="section3-2">
+                <h3>Review <span class="section3_s">● ● ●</span></h3>
+                <p>대구 수목원목재문화체험장<br>
+                8월 이용 인터넷 접수<br>
+                대구 미술관 단체관람<br>
+                대구 어린이세상 개관기념<br>
+                대구시민안전테마파트 체험 접수
+                </p>
+            </div>
+            <div class="section3-3">
+                <h3>Discount <span style="color:#848ba1; font-weight:lighter; padding-top:3px">more +</span> </h3>
+                <p>대구 수목원목재문화체험장<br>
+                8월 이용 인터넷 접수<br>
+                대구 미술관 단체관람<br>
+                대구 어린이세상 개관기념<br>
+                대구시민안전테마파트 체험 접수
+                </p>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-----footer start--------------------------------------------->
+    <footer>
+        <div class="footer_logo"><img src="img/footerLOGO.png" class="footer_logo_img"></div>
+          <div class="footer_text"><br>
+            <p>동인청사 : (우 41911) 대구광역시 중구 공평로 88<br>
+            산격청사 : (우 41542)대구광역시 북구 연암로 40 <br>
+            전화번호 : 053)120, 053)803-011</p><br>
+            <p>저작권 안내 ㅣ 이용약관  ㅣ  개인정보 처리약관  ㅣ  윤리경영  ㅣ  공지사항</p>
+          </div>    
+        <div class="footer_sns">
+              <img src="img/instagram1.png" class="footer_sns_img">
+              <img src="img/kakao1.png" class="footer_sns_img">
+              <img src="img/band.png" class="footer_sns_img">
+              <img src="img/youtube.png" class="footer_sns_img">
+              <img src="img/facebook1.png" class="footer_sns_img">
+        </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+  
+      $('.slider').slick({
+        centerMode: true,
+        dots: true,
+        autoplay: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            Infinity: true,
+            slidesToShow: 1
+          },
+        }]
+      });
+  
+    </script>
+
+ 
+</body>
+</html>
